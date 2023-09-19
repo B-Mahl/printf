@@ -1,14 +1,11 @@
 #include "main.h"
-
 /**
  * printer_2 - Function that uses a character specifier
  * to choose the proper handler to use.
  * @c: Character specifier
  * @args: va_list containing the variable arg
- *
  * Return: Total number of characters printed.
  */
-
 int printer_2(char c, va_list args)
 {
 	int chars, i, size;
@@ -27,7 +24,7 @@ int printer_2(char c, va_list args)
 					chars += handle_u(args);
 					break;
 				case 'o':
-					chars += handle_u(args);
+					chars += handle_o(args);
 					break;
 				case 'x':
 				case 'X':

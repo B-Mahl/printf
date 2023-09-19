@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * handle_o - Handles the octal format conversion specifier 'o'.
  * @args: va_list with the arg to be printed.
  *
  * Return: Number of characters printed
  */
-
 int handle_o(va_list args)
 {
 	unsigned int n;
@@ -15,7 +13,7 @@ int handle_o(va_list args)
 
 	chars = 0;
 	i = 0;
-	n = va_arg(args, int);
+	n = va_arg(args, unsigned int);
 
 	do {
 		octal[i] = (n % 8) + '0';
