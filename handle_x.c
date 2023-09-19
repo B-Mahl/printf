@@ -19,7 +19,7 @@ int handle_x(char c, va_list args)
 
 	if (c == 'x')
 		hexa = "0123456789abcdef";
-	else
+	else if (c == 'X')
 		hexa = "0123456789ABCDEF";
 	do {
 		buffer[i] = hexa[(n % 16)];
